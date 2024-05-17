@@ -16,8 +16,10 @@ public class Product {
     @Column(name = "product_id")
     private Long productId;
 
+    @Column(length = 50, nullable = false)
     private String name;
 
+    @Column(length = 50, nullable = false)
     private BigDecimal price;
 
     @ManyToOne

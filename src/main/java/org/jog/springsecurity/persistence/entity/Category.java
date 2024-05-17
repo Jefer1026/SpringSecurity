@@ -14,6 +14,7 @@ public class Category {
     @Column(name = "category_id")
     private Long categoryId;
 
+    @Column(length = 50, nullable = false)
     private String name;
 
     @Enumerated(EnumType.STRING)
